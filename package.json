@@ -5,6 +5,13 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "scripts": {
+    "dev": "hexo server",
+    "server": "nohup hexo server > app.log 2>&1 &",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "generate": "hexo generate --force"
+  },
   "dependencies": {
     "hexo": "^3.8.0",
     "hexo-deployer-git": "^1.0.0",
